@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RESPONSIVE DIVS</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<style type="text/css">
+		*{
+			padding: 0px;
+			margin: 0px;
+			box-sizing:border-box;
+		}
+		p{
+			font-size: 5vw;
+			text-align: center;
+		}
+		.banner{
+			display: inline-block;
+			height: 15vh;
+			margin: auto;
+				
+		}
+		#left{
+			background: orange;
+		}
+		#center{
+			background: white;
+		}
+		#right{
+			background: green;
+		}
+		@media screen and (max-width:800px){
+  			.banner {
+    		width:100%;
+    		float: none;}
+    	}
+    	@media screen and (min-width:801px){
+  			.banner {
+    		width:32%;}
+    	}		
+
+		
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div id="left" class="banner"><p>LEFT</p></div>
+		<div id="center" class="banner"><p>CENTER</p></div>
+		<div id="right" class="banner"><p>RIGHT</p></div>
+	</div>
+</body>
+</html>
