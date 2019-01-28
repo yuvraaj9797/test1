@@ -1,0 +1,21 @@
+			html {
+  				background: rgba(0,0,0);
+			}
+			body{
+				margin: 0px;
+				padding: 0px;
+			}
+			.container{
+				overflow: hidden;
+			}
+			.overlay{
+				
+				background: url(img_1.jpg) fixed center;
+				background-repeat: no-repeat;
+				background-size:100vw auto;
+				min-width: 100vw;
+				min-height: 100vh;
+				filter: blur(5px);
+				box-shadow:inset 0 0 0 100vw rgba(0,0,0,0.6);
+				z-index: -1;
+			}
